@@ -1,0 +1,152 @@
+.header-container{
+    
+    width: 1800px;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 80px);
+    margin:20px  40px;
+    
+    
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+.logo-info{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 157px; /* Задай нужный размер логотипа */
+    height: 32px;
+    margin-right: 10px; /* Отступ справа для отделения от текста */
+}
+
+.logo-info p{
+    width: 152px;
+    height: 34px;
+}
+.number{
+    width: 134px;
+    height: 38px;
+
+    display: flex;
+    flex-direction: column;
+}
+.number p {
+    width: 134px;
+    height: 18px;
+    margin-bottom: 12px;
+    text-decoration: underline gray ;
+}
+
+.number ul {
+    padding: 0;
+    margin: 0;
+    /* убираем маркеры */
+}
+
+.number ul li {
+    width: 84px;
+    height: 16px;
+    margin-left: auto;
+    color: #A0A747;
+}
+.west-garden {
+    background-color: #ffffff;
+    width: 930px;
+    height: auto; /* Убираем фиксированную высоту, чтобы блок подстраивался под контент */
+    margin: auto;
+    margin-top: 55px;
+    padding: 20px; /* Можно добавить отступы, чтобы не было вплотную к краям */
+    display: flex;
+    flex-direction: column; /* Располагаем элементы друг под другом */
+    justify-content: center;
+   
+}
+
+.west-garden__logo {
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 20px; /* Добавляем отступ между логотипом и заголовком */
+}
+
+.westgarden {
+    width: 214px;
+    height: 40px;
+}
+
+.west-garden h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 64px; 
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: -3px;/* Размер шрифта заголовка */
+    text-align: center; /* Центрируем текст */
+    word-wrap: break-word; /* Для переноса текста, если он слишком длинный */
+}
+.west-garden p{
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -1%;
+    border-bottom: 2px solid #4e7c05; /* Линия толщиной 2px и чёрного цвета */
+    padding-bottom: 2px;
+}
+.gardenpic-container {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Центрирование */
+}
+
+.garden-pic {
+    width: 100%; /* Фотография занимает всю ширину контейнера */
+    max-width: 1800px; /* Максимальная ширина, чтобы не выходить за пределы */
+    height: auto; /* Автоматическая высота, чтобы не искажалось */
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+}
+/* Добавьте эти стили в Header.css */
+
+  .menu-wrapper {
+    position: relative;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  
+  .menu-trigger {
+    background: #f5f5f5;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    z-index: 100;
+    min-width: 220px;
+    padding: 10px 0;
+  }
+  
+  .menu-item {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    transition: background 0.2s;
+  }
+  
+  .menu-item:hover {
+    background: #f9f9f9;
+  }

@@ -1,0 +1,133 @@
+.design-container {
+    width: 1180px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+.header-button {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.header-button h1 {
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.header-button h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.header-button button {
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(106, 17, 203, 0.3);
+    margin-bottom: 20px;
+}
+
+.header-button button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 17, 203, 0.4);
+}
+
+.light-dark {
+    height: 770px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+
+.div1 {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.div2 {
+    grid-column: 3;
+    grid-row: 1;
+    background: linear-gradient(to bottom right, #0e0707, #6f2d2d);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+.div2-1 {
+    grid-column: 3;
+    grid-row: 1;
+    
+    background: linear-gradient(to bottom right, #c7c7c7, #ffffff);
+    border-radius: 12px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.div3 {
+    grid-column: 1 / span 1;
+    grid-row: 2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.div4 {
+    grid-column: 2 / span 3;
+    grid-row: 2;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.light-dark img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.light-dark div:hover img {
+    transform: scale(1.05);
+}
+
+.content-block {
+    width: 100%;
+    height: 100%;
+}
+
+.content-block p:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+
+.content-block p:last-child {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}

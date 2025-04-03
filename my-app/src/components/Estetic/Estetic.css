@@ -1,0 +1,102 @@
+.estetic-home {
+    font-family: 'Inter', sans-serif;
+    color: #2D3748;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .Estetic-container {
+    background: #FFFFFF;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  
+  .modern-beauty {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1A202C;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: -0.02em;
+  }
+  
+  .lobby-container {
+    padding: 40px;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #F9FAFB, #FFFFFF);
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    margin-bottom: 30px;
+  }
+  
+  .lobby-container h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 25px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .lobby-container h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #667EEA, #764BA2);
+    border-radius: 3px;
+  }
+  
+  .estetic-features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+  
+  .estetic-features p {
+    position: relative;
+    padding-left: 28px;
+    margin: 0;
+    font-size: 1.1rem;
+    color: #4A5568;
+    font-weight: 500;
+  }
+  
+  .estetic-features p::before {
+    content: "✦";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #667EEA;
+    font-size: 1.2rem;
+  }
+  
+  .estetic-gallery {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+  }
+  
+  .estetic-gallery img {
+    width: 48%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .estetic-gallery img:hover {
+    transform: scale(1.02);
+  }
+  
+  .lift-hall {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(203, 213, 225, 0.5), transparent);
+    margin: 40px 0;
+  }

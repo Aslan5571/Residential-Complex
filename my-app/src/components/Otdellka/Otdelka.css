@@ -1,0 +1,169 @@
+/* Основные стили */
+.otdelka-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    position: relative;
+  }
+  
+  .otdelka-header {
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  
+  .otdelka-header h1 {
+    font-size: 52px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+  }
+  
+  .otdelka-header h1:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #A0A747, #8E9E3D);
+    border-radius: 2px;
+  }
+  
+  .subtitle {
+    font-size: 22px;
+    color: #555;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+  
+  /* Сетка карточек */
+  .otdelka-varities {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Стили карточек */
+  .otdelka-items {
+    width: 380px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+  }
+  
+  .otdelka-items:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.12);
+  }
+  
+  .image-wrapper {
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  
+  .otdelka-items:hover .image-wrapper img {
+    transform: scale(1.05);
+  }
+  
+  .content {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .content h2 {
+    font-size: 24px;
+    color: #2a2a2a;
+    margin-bottom: 15px;
+    line-height: 1.4;
+  }
+  
+  .content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 10px;
+  }
+  
+  /* Декоративные элементы */
+  .otdelka-items:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(160,167,71,0) 0%, rgba(160,167,71,0.03) 100%);
+    z-index: 1;
+    pointer-events: none;
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 1200px) {
+    .otdelka-items {
+      width: 340px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .otdelka-varities {
+      gap: 30px;
+    }
+    
+    .otdelka-items {
+      width: calc(50% - 15px);
+    }
+    
+    .image-wrapper {
+      height: 200px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .otdelka-container {
+      padding: 80px 20px;
+    }
+    
+    .otdelka-header h1 {
+      font-size: 42px;
+    }
+    
+    .subtitle {
+      font-size: 18px;
+    }
+    
+    .otdelka-items {
+      width: 100%;
+      max-width: 400px;
+    }
+    
+    .content h2 {
+      font-size: 22px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .otdelka-header h1 {
+      font-size: 36px;
+    }
+    
+    .image-wrapper {
+      height: 180px;
+    }
+  }

@@ -1,0 +1,114 @@
+.fully {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.finish-h1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+}
+
+.finish-h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.finish-h1 h1 {
+    font-size: 36px;
+    line-height: 1.3;
+    font-weight: 500;
+    max-width: 800px;
+}
+
+.to-flex {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.organisation-blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+
+.estes-experts {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.estes-experts::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.estes-experts p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4;
+    min-width: 120px;
+}
+
+.estes-experts h2 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 5px;
+}
+
+.finish-pic {
+    flex: 2;
+}
+
+.finish-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1200px) {
+    .to-flex {
+        flex-direction: column;
+    }
+    
+    .finish-pic {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .finish-h1 {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+    
+    .finish-h1 img {
+        order: -1;
+    }
+    
+    .estes-experts {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
